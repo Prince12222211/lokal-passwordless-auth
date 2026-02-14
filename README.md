@@ -26,20 +26,20 @@ All authentication logic is implemented locally as per assignment requirements.
 
 ## Project Structure
 
+```
 src/
 ├── screens/
-│ ├── LoginScreen.tsx
-│ ├── OtpScreen.tsx
-│ ├── SessionScreen.tsx
+│   ├── LoginScreen.tsx
+│   ├── OtpScreen.tsx
+│   ├── SessionScreen.tsx
 ├── hooks/
-│ └── useSessionTimer.ts
+│   └── useSessionTimer.ts
 ├── services/
-│ ├── otpManager.ts
-│ └── analytics.ts
+│   ├── otpManager.ts
+│   └── analytics.ts
 ├── types/
-│ └── auth.ts
-
----
+│   └── auth.ts
+```
 
 ## Features Implemented
 
