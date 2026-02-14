@@ -219,5 +219,7 @@ If the app runs without errors, setup is successful.
 
 ## Author
 
-Prince Verma  
+Prince Kumar Verma  
+9334549702
+princeverma9504@gmail.com
 B.Tech CSE (2026 Batch)
