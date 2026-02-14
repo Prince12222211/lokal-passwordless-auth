@@ -1,20 +1,19 @@
-# 📱 Passwordless Authentication Flow
+# Passwordless Authentication Flow
 
-### Lokal Full-Term Internship Assignment
-
+Lokal Full-Term Internship Assignment  
 Built with React Native (Expo) + TypeScript
 
 ---
 
-## 🚀 Overview
+## Overview
 
 This project implements a passwordless authentication flow using Email + OTP, followed by a Session screen that tracks live login duration.
 
-All logic is implemented locally as per assignment requirements.
+All authentication logic is implemented locally as per assignment requirements.
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - React Native (Expo)
 - TypeScript
@@ -25,24 +24,24 @@ All logic is implemented locally as per assignment requirements.
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
-```
 src/
 ├── screens/
-│   ├── LoginScreen.tsx
-│   ├── OtpScreen.tsx
-│   ├── SessionScreen.tsx
+│ ├── LoginScreen.tsx
+│ ├── OtpScreen.tsx
+│ ├── SessionScreen.tsx
 ├── hooks/
-│   └── useSessionTimer.ts
+│ └── useSessionTimer.ts
 ├── services/
-│   ├── otpManager.ts
-│   └── analytics.ts
+│ ├── otpManager.ts
+│ └── analytics.ts
 ├── types/
-│   └── auth.ts
-```
+│ └── auth.ts
 
-## 🔐 Features Implemented
+---
+
+## Features Implemented
 
 ### Email + OTP Authentication
 
@@ -80,7 +79,7 @@ The following events are logged using AsyncStorage:
 
 ---
 
-## 🧠 Architecture Decisions
+## Architecture Decisions
 
 - Clear separation of UI and business logic
 - OTP logic handled in otpManager.ts
@@ -92,7 +91,7 @@ The following events are logged using AsyncStorage:
 
 ---
 
-## 🧪 Edge Cases Handled
+## Edge Cases Handled
 
 - Expired OTP
 - Incorrect OTP
@@ -103,35 +102,103 @@ The following events are logged using AsyncStorage:
 
 ---
 
-## 🛠 Setup Instructions
+## Setup Instructions
 
-1. Clone the repository
+### Prerequisites
 
-git clone <YOUR_GITHUB_REPOSITORY_LINK>
+Make sure the following are installed:
 
-2. Navigate to project folder
+- Node.js (v18 or above recommended)
+- npm
+- Expo Go (for Android device) OR Android Emulator
 
-cd lokal-auth
+Verify installation:
 
-3. Install dependencies
-
-npm install
-
-4. Start development server
-
-npx expo start
-
-5. Run the App
-
-- Open Expo Go on Android device
-- Scan the QR code
-- OR press "a" to run on Android Emulator
+node -v
+npm -v
 
 ---
 
-## 🎯 Key React Concepts Demonstrated
+### 1. Clone the Repository
 
-- useState for UI state
+git clone <YOUR_GITHUB_REPOSITORY_LINK>
+
+---
+
+### 2. Navigate to Project Folder
+
+cd lokal-auth
+
+---
+
+### 3. Install Dependencies
+
+npm install
+
+---
+
+### 4. Start Development Server
+
+npx expo start
+
+This will start the Expo development server and display a QR code.
+
+---
+
+### 5. Run the Application
+
+Option A: Physical Android Device (Recommended)
+
+- Install Expo Go from Play Store
+- Connect phone and laptop to same WiFi
+- Scan QR code
+- App will launch automatically
+
+Option B: Android Emulator
+
+- Open Android Studio
+- Start an Android Virtual Device
+- In terminal press:
+
+a
+
+Option C: Web (Optional)
+
+Press:
+
+w
+
+---
+
+### 6. Clear Cache (If Needed)
+
+If bundling issues occur:
+
+npx expo start -c
+
+---
+
+### 7. Clean Build Verification (Optional)
+
+Delete node_modules:
+
+rm -rf node_modules
+
+Reinstall dependencies:
+
+npm install
+
+Start again:
+
+npx expo start
+
+If the app runs without errors, setup is successful.
+
+---
+
+## Key React Concepts Demonstrated
+
+- useState for UI state management
 - useEffect for side effects and cleanup
 - useRef for persistent values across re-renders
 - Custom hooks
@@ -141,7 +208,7 @@ npx expo start
 
 ---
 
-## 📌 Notes
+## Notes
 
 - No backend used (as per requirement)
 - All OTP logic implemented locally
@@ -150,7 +217,7 @@ npx expo start
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 Prince Verma  
 B.Tech CSE (2026 Batch)
